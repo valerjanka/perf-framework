@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.ptf</groupId>
-    <artifactId>performance-framework</artifactId>
+    <artifactId>ptf</artifactId>
     <version>0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
@@ -13,9 +13,9 @@
     </properties>
 	
 	<modules>
-		<module>ptf-api</module>
-		<module>ptf-properties-api</module>
-		<module>ptf-spring-api</module>
+		<module>ptf-core</module>
+		<module>ptf-properties</module>
+		<module>ptf-spring</module>
 	</modules>
 
 	<dependencyManagement>
@@ -43,14 +43,12 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.2</version>
-            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>

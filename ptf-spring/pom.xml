@@ -4,13 +4,18 @@
 	
 	<parent>
 		<groupId>com.ptf</groupId>
-		<artifactId>performance-framework</artifactId>
+		<artifactId>ptf</artifactId>
 		<version>0.1-SNAPSHOT</version>
 	</parent>
 	
-    <artifactId>ptf-properties-api</artifactId>
+    <artifactId>ptf-spring</artifactId>
 
 	<dependencies>
+		<dependency>
+            <groupId>com.ptf</groupId>
+            <artifactId>ptf-core</artifactId>
+        </dependency>
+		
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

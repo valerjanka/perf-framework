@@ -4,11 +4,11 @@
 	
 	<parent>
 		<groupId>com.ptf</groupId>
-		<artifactId>performance-framework</artifactId>
+		<artifactId>ptf</artifactId>
 		<version>0.1-SNAPSHOT</version>
 	</parent>
 	
-    <artifactId>ptf-api</artifactId>
+    <artifactId>ptf-core</artifactId>
 
 	<dependencies>
         <dependency>
