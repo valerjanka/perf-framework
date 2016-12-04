@@ -6,6 +6,7 @@
 		<groupId>com.ptf</groupId>
 		<artifactId>ptf</artifactId>
 		<version>0.1-SNAPSHOT</version>
+        <relativePath>..</relativePath>
 	</parent>
 	
     <artifactId>ptf-properties</artifactId>
@@ -14,6 +15,7 @@
 		<dependency>
 			<groupId>com.ptf</groupId>
             <artifactId>ptf-core</artifactId>
+            <version>${version}</version>
         </dependency>
 		
         <dependency>
