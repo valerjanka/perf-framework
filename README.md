@@ -3,12 +3,12 @@ Performance testing framework that measure API calls and have replaceable parts 
 ## Modules:
 1. ptf-core - core of Performance Testing Framework
 2. ptf-properties - implementation of core parts using properties file
-  1. Test flow configuration
-  2. Runners configuration
-  3. Context Configuration
+    1. Test flow configuration
+    2. Runners configuration
+    3. Context Configuration
 3. ptf-spring - implementation of core parts using spring context:
-  1. Defining test flow in spring xml file
-  2. Configure components via spring xml file
+    1. Defining test flow in spring xml file
+    2. Configure components via spring xml file
 
 Look more about each module in their README.md files
 
@@ -18,17 +18,17 @@ Look more about each module in their README.md files
 3. MeasurementService
 4. Measurement
 5. Runners:
-  1. SuiteRunner
-  2. TestRunner
-  3. TestFlowRunner
+    1. SuiteRunner
+    2. TestRunner
+    3. TestFlowRunner
 6. Context:
-  1. FlowContext
-  2. TestContext
-  3. ThreadContext
+    1. FlowContext
+    2. TestContext
+    3. ThreadContext
 7. ID/Name - <SuiteID, TestID, RunID> triple is unique identification of one run:
-  1. SuiteId (ex. suite1)
-  2. TestId (ex. 'CreateUser') - includes list of 
-  3. RunId (ex. 'iteration', 'thread', ...)
+    1. SuiteId (ex. suite1)
+    2. TestId (ex. 'CreateUser') - includes list of
+    3. RunId (ex. 'iteration', 'thread', ...)
 8. Barrier - synchronized threads (configurable)
 9. ExecutionService - thread execution service.
 

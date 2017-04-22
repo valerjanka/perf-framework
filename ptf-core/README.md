@@ -7,22 +7,25 @@ Performance testing framework that measure API calls and have replaceable parts 
 3. MeasurementService
 4. Measurement
 5. Runners:
-  1. SuiteRunner
-  2. TestRunner
-  3. TestFlowRunner
+    1. SuiteRunner
+    2. TestRunner
+    3. TestThreadRunner
 6. Context:
-  1. FlowContext
-  2. TestContext
-  3. ThreadContext
+    1. SuiteContext
+    2. TestContext
+    3. TestThreadContext
 7. ID/Name - <SuiteID, TestID, RunID> triple is unique identification of one run:
-  1. SuiteId (ex. suite1)
-  2. TestId (ex. 'CreateUser') - includes list of 
-  3. RunId (ex. 'iteration', 'thread', ...)
+    1. SuiteId (ex. suite1)
+    2. TestId (ex. 'CreateUser') - includes list of
+    3. RunId (ex. 'iteration', 'thread', 'agent', ...)
 8. Barrier - synchronized threads (configurable)
 9. ExecutionService - thread execution service.
 
 ## Test execution
-One test could be executed N times in K threads. Each execution is synchronized with other threads, so each iteration executes K same calls at one time (at one time means, as it possible to do in java API).
+One test could be executed N times in K threads.
+Each execution is synchronized with other threads,
+so each iteration executes K same calls at one time (at one time means,
+as it possible to do in java API).
 
 ### Test API
 Each Test should extend **AbstractTest** that configured with JUnit runner API so it could be run directly from IDE.  
@@ -37,7 +40,7 @@ Each Test should extend **AbstractTest** that configured with JUnit runner API s
 ## Next objects are created per thread:   
 1. Test
 2. ThreadContext
-3. TestFlowRunner
+3. TestThreadRunner
 4. MeasurementService
 5. Measurement
 

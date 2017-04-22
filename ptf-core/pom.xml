@@ -10,6 +10,7 @@
 	</parent>
 	
     <artifactId>ptf-core</artifactId>
+    <packaging>jar</packaging>
 
 	<dependencies>
         <dependency>
